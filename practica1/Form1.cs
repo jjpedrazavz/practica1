@@ -109,6 +109,10 @@ namespace practica1
                 {
                     txtResult.Text = (double.Parse(txtInput.Text) * 0.3048).ToString();
                 }
+                else if (cboxDestino.SelectedItem.ToString().Equals("pie"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 1).ToString();
+                }
                 else if (cboxDestino.SelectedItem.ToString().Equals("mi"))
                 {
                     txtResult.Text = "Conversion no valida!";
@@ -137,6 +141,75 @@ namespace practica1
                     txtResult.Text = "Conversion no valida!";
                 }
             }
+            else if (cboxOrigen.SelectedItem.ToString().Equals("pulg"))
+            {
+                if (cboxDestino.SelectedItem.ToString().Equals("pie"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 0.0833).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("cm"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 2.54).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("m"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 0.0254).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("pulg"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 1).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("mi"))
+                {
+                    txtResult.Text = "Conversion no valida!";
+                }
+            }
+            else if (cboxOrigen.SelectedItem.ToString().Equals("m"))
+            {
+                if (cboxDestino.SelectedItem.ToString().Equals("pie"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 3.28084).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("cm"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 100).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("m"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 1).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("pulg"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 39.3701).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("mi"))
+                {
+                    txtResult.Text = "Conversion no valida!";
+                }
+            }
+            else if (cboxOrigen.SelectedItem.ToString().Equals("mi"))
+            {
+                if (cboxDestino.SelectedItem.ToString().Equals("pie"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 5280).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("cm"))
+                {
+                    txtResult.Text = "Conversion no valida!";
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("m"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 1609.344).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("pulg"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 63360).ToString();
+                }
+                else if (cboxDestino.SelectedItem.ToString().Equals("mi"))
+                {
+                    txtResult.Text = (double.Parse(txtInput.Text) * 1).ToString();
+                }
+            }
 
         }
 
@@ -147,3 +220,7 @@ namespace practica1
 
     }
 }
+
+
+
+
